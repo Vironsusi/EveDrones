@@ -19,10 +19,6 @@ string line;
 ifstream myInputfile;
 ofstream myOutputfile;
 
-string szDroneName;
-int iDroneAmount;
-int iDroneBPME;
-int iDroneBPTE;
 
 // Tech 1 Materials
 int iTritanium{ 0 };
@@ -96,6 +92,10 @@ double dCharacterManufacturingTimeEffeciencySkillBonusTimes100 = .32; // Max 32%
 
 int main()
 {
+    static string szDroneName;
+    static int iDroneAmount;
+    static int iDroneBPME;
+    static int iDroneBPTE;
 
     cout << "Please input the name of the drone you wish to build: Example 'Augmented' Hornet or Hornet II" << endl;
     getline(cin, szDroneName); cout << "Complete   " << endl;
@@ -1920,150 +1920,151 @@ int main()
         if (myOutputfile.is_open())
         {
             myOutputfile << "Buy Order for " << iDroneAmount << "x " << szDroneName << "--------------------------------------------------------------" << "\n";
-            myOutputfile << iTritanium << "x Tritanium \n";
-            myOutputfile << iPyerite << "x Pyerite \n";
-            myOutputfile << iMexallon << "x Mexallon \n";
-            myOutputfile << iIsogen << "x Isogen \n";
-            myOutputfile << iNocxium << "x Nocxium \n";
-            myOutputfile << iMegacyte << "x Megacyte \n";
-            myOutputfile << iZydrine << "x Zydrine \n";
-            myOutputfile << RAMRobotics << "x R.A.M.- Robotics \n";
-            if (szDroneName == "Acolyte II" || "Acolyte I" || "'Augmented' Acolyte" || "'Integrated' Acolyte")
+            myOutputfile << iTritanium  << "x Tritanium \n";
+            myOutputfile << iPyerite  << "x Pyerite \n";
+            myOutputfile << iMexallon  << "x Mexallon \n";
+            myOutputfile << iIsogen  << "x Isogen \n";
+            myOutputfile << iNocxium  << "x Nocxium \n";
+            myOutputfile << iMegacyte  << "x Megacyte \n";
+            myOutputfile << iZydrine  << "x Zydrine \n";
+            myOutputfile << RAMRobotics  << "x R.A.M.- Robotics \n";
+            if (szDroneName == "Acolyte II" || szDroneName == "Acolyte I" || szDroneName == "'Augmented' Acolyte" || szDroneName == "'Integrated' Acolyte")
             {
                 myOutputfile << iTech1Drone << "x Acolyte I \n";
-                myOutputfile << iTech2Drone << "x Acolyte II \n";
+                myOutputfile <<  iTech2Drone   << "x Acolyte II \n";
             }
-            if (szDroneName == "Aralez")
+            else if (szDroneName == "Aralez")
             {
-                myOutputfile << iTech1Drone << "x Carbon \n";
-                myOutputfile << iTech2Drone << "x Carbon \n";
+                myOutputfile <<  iTech1Drone   << "x Carbon \n";
+                myOutputfile <<  iTech2Drone   << "x Carbon \n";
             }
-            if (szDroneName == "Berserker II" || "Berserker I" || "'Augmented' Berserker" || "'Integrated' Berserker")
+            else if (szDroneName == "Berserker II" || szDroneName == "Berserker I" || szDroneName == "'Augmented' Berserker" || szDroneName == "'Integrated' Berserker")
             {
-                myOutputfile << iTech1Drone << "x Berserker I \n";
-                myOutputfile << iTech2Drone << "x Berserker II \n";
+                myOutputfile <<  iTech1Drone   << "x Berserker I \n";
+                myOutputfile <<  iTech2Drone   << "x Berserker II \n";
             }
-            if (szDroneName == "Bouncer II" || "Bouncer I")
+            else if (szDroneName == "Bouncer II" || szDroneName == "Bouncer I")
             {
-                myOutputfile << iTech1Drone << "x Bouncer I \n";
-                myOutputfile << iTech2Drone << "x Bouncer II \n";
+                myOutputfile <<  iTech1Drone   << "x Bouncer I \n";
+                myOutputfile <<  iTech2Drone   << "x Bouncer II \n";
             }
-            if (szDroneName == "Curator II" || "Curator I")
+            else if (szDroneName == "Curator II" || szDroneName == "Curator I")
             {
-                myOutputfile << iTech1Drone << "x Curator I \n";
-                myOutputfile << iTech2Drone << "x Curator II \n";
+                myOutputfile <<  iTech1Drone   << "x Curator I \n";
+                myOutputfile <<  iTech2Drone   << "x Curator II \n";
             }
-            if (szDroneName == "Garde II" || "Garde I")
+            else if (szDroneName == "Garde II" || szDroneName == "Garde I")
             {
-                myOutputfile << iTech1Drone << "x Garde I \n";
-                myOutputfile << iTech2Drone << "x Garde II \n";
+                myOutputfile <<  iTech1Drone   << "x Garde I \n";
+                myOutputfile <<  iTech2Drone   << "x Garde II \n";
             }
-            if (szDroneName == "Gecko")
+            else if (szDroneName == "Gecko")
             {
-                myOutputfile << iTech1Drone << "x Carbon \n";
-                myOutputfile << iTech2Drone << "x Carbon \n";
+                myOutputfile <<  iTech1Drone   << "x Carbon \n";
+                myOutputfile <<  iTech2Drone   << "x Carbon \n";
             }
-            if (szDroneName == "Hammerhead II" || "Hammerhead I" || "'Augmented' Hammerhead" || "'Integrated' Hammerhead")
+            else if (szDroneName == "Hammerhead II" || szDroneName == "Hammerhead I" || szDroneName == "'Augmented' Hammerhead" || szDroneName == "'Integrated' Hammerhead")
             {
-                myOutputfile << iTech1Drone << "x Hammerhead I \n";
-                myOutputfile << iTech2Drone << "x Hammerhead II \n";
+                myOutputfile <<  iTech1Drone   << "x Hammerhead I \n";
+                myOutputfile <<  iTech2Drone   << "x Hammerhead II \n";
             }
-            if (szDroneName == "Hobgoblin II" || "Hobgoblin I" || "'Augmented' Hobgoblin" || "'Integrated' Hobgoblin")
+            else if (szDroneName == "Hobgoblin II" || szDroneName == "Hobgoblin I" || szDroneName == "'Augmented' Hobgoblin" || szDroneName == "'Integrated' Hobgoblin")
             {
-                myOutputfile << iTech1Drone << "x Hobgoblin I \n";
-                myOutputfile << iTech2Drone << "x Hobgoblin II \n";
+                myOutputfile <<  iTech1Drone   << "x Hobgoblin I \n";
+                myOutputfile <<  iTech2Drone   << "x Hobgoblin II \n";
             }
-            if (szDroneName == "Hornet II" || "Hornet I" || "'Augmented' Hornet" || "'Integrated' Hornet")
+            else if (szDroneName == "Hornet II" || szDroneName == "Hornet I" || szDroneName == "'Augmented' Hornet" || szDroneName == "'Integrated' Hornet")
             {
-                myOutputfile << iTech1Drone << "x Hornet I \n";
-                myOutputfile << iTech2Drone << "x Hornet II \n";
+                myOutputfile <<  iTech1Drone   << "x Hornet I \n";
+                myOutputfile <<  iTech2Drone   << "x Hornet II \n";
             }
-            if (szDroneName == "Ice Harvesting Drone II" || "Ice Harvesting Drone I" || "'Augmented' Ice Harvesting Drone" || "'Excavator' Ice Harvesting Drone")
+            else if (szDroneName == "Ice Harvesting Drone II" || szDroneName == "Ice Harvesting Drone I" || szDroneName == "'Augmented' Ice Harvesting Drone" || szDroneName == "'Excavator' Ice Harvesting Drone")
             {
-                myOutputfile << iTech1Drone << "x Ice Harvesting Drone I \n";
-                myOutputfile << iTech2Drone << "x Ice Harvesting Drone II \n";
+                myOutputfile <<  iTech1Drone   << "x Ice Harvesting Drone I \n";
+                myOutputfile <<  iTech2Drone   << "x Ice Harvesting Drone II \n";
             }
-            if (szDroneName == "Infiltrator II" || "Infiltrator I" || "'Augmented' Infiltrator" || "'Integrated' Infiltrator")
+            else if (szDroneName == "Infiltrator II" || szDroneName == "Infiltrator I" || szDroneName == "'Augmented' Infiltrator" || szDroneName == "'Integrated' Infiltrator")
             {
-                myOutputfile << iTech1Drone << "x Infiltrator I \n";
-                myOutputfile << iTech2Drone << "x Infiltrator II \n";
+                myOutputfile <<  iTech1Drone   << "x Infiltrator I \n";
+                myOutputfile <<  iTech2Drone   << "x Infiltrator II \n";
             }
-            if (szDroneName == "Mining Drone II" || "Mining Drone I" || "'Augmented' Mining Drone" || "'Harvester' Mining Drone" || "'Excavator' Mining Drone" || "Civilian Mining Drone")
+            else if (szDroneName == "Mining Drone II" || szDroneName == "Mining Drone I" || szDroneName == "'Augmented' Mining Drone" || szDroneName == "'Harvester' Mining Drone" || szDroneName == "'Excavator' Mining Drone" || szDroneName == "Civilian Mining Drone")
             {
-                myOutputfile << iTech1Drone << "x Mining Drone I \n";
-                myOutputfile << iTech2Drone << "x Mining Drone II \n";
+                myOutputfile <<  iTech1Drone   << "x Mining Drone I \n";
+                myOutputfile <<  iTech2Drone   << "x Mining Drone II \n";
             }
-            if (szDroneName == "Ogre II" || "Ogre I" || "'Augmented' Ogre" || "'Integrated' Ogre")
+            else if (szDroneName == "Ogre II" || szDroneName == "Ogre I" || szDroneName == "'Augmented' Ogre" || szDroneName == "'Integrated' Ogre")
             {
-                myOutputfile << iTech1Drone << "x Ogre I \n";
-                myOutputfile << iTech2Drone << "x Ogre II \n";
+                myOutputfile <<  iTech1Drone   << "x Ogre I \n";
+                myOutputfile <<  iTech2Drone   << "x Ogre II \n";
             }
-            if (szDroneName == "Praetor II" || "Praetor I" || "'Augmented' Praetor" || "'Integrated' Praetor")
+            else if (szDroneName == "Praetor II" || szDroneName == "Praetor I" || szDroneName == "'Augmented' Praetor" || szDroneName == "'Integrated' Praetor")
             {
-                myOutputfile << iTech1Drone << "x Praetor I \n";
-                myOutputfile << iTech2Drone << "x Praetor II \n";
+                myOutputfile <<  iTech1Drone   << "x Praetor I \n";
+                myOutputfile <<  iTech2Drone   << "x Praetor II \n";
             }
-            if (szDroneName == "Salvage Drone I" || "Salvage Drone II" || "'Dunk' Salvage Drone")
+            else if (szDroneName == "Salvage Drone I" || szDroneName == "Salvage Drone II" || szDroneName == "'Dunk' Salvage Drone")
             {
-                myOutputfile << iTech1Drone << "x Salvage Drone I \n";
-                myOutputfile << iTech2Drone << "x Salvage Drone I \n";
+                myOutputfile <<  iTech1Drone   << "x Salvage Drone I \n";
+                myOutputfile <<  iTech2Drone   << "x Salvage Drone I \n";
             }
-            if (szDroneName == "Subverted JVN-UC49" || "Subverted" || "'Subverted'" || "'Subverted' JVN-UC49")
+            else if (szDroneName == "Subverted JVN-UC49" || szDroneName == "Subverted" || szDroneName == "'Subverted'" || szDroneName == "'Subverted' JVN-UC49")
             {
-                myOutputfile << iTech1Drone << "x Carbon \n";
-                myOutputfile << iTech2Drone << "x Carbon \n";
+                myOutputfile <<  iTech1Drone   << "x Carbon \n";
+                myOutputfile <<  iTech2Drone   << "x Carbon \n";
             }
-            if (szDroneName == "Valkyrie II" || "Valkyrie I" || "'Augmented' Valkyrie" || "'Integrated' Valkyrie")
+            else if (szDroneName == "Valkyrie II" || szDroneName == "Valkyrie I" || szDroneName == "'Augmented' Valkyrie" || szDroneName == "'Integrated' Valkyrie")
             {
-                myOutputfile << iTech1Drone << "x Valkyrie I \n";
-                myOutputfile << iTech2Drone << "x Valkyrie II \n";
+                myOutputfile <<  iTech1Drone   << "x Valkyrie I \n";
+                myOutputfile <<  iTech2Drone   << "x Valkyrie II \n";
             }
-            if (szDroneName == "Vespa II" || "Vespa I" || "'Augmented' Vespa" || "'Integrated' Vespa")
+            else if (szDroneName == "Vespa II" || szDroneName == "Vespa I" || szDroneName == "'Augmented' Vespa" || szDroneName == "'Integrated' Vespa")
             {
-                myOutputfile << iTech1Drone << "x Vespa I \n";
-                myOutputfile << iTech2Drone << "x Vespa II \n";
+                myOutputfile <<  iTech1Drone   << "x Vespa I \n";
+                myOutputfile <<  iTech2Drone   << "x Vespa II \n";
             }
-            if (szDroneName == "Warden II" || "Warden I")
+            else if (szDroneName == "Warden II" || szDroneName == "Warden I")
             {
-                myOutputfile << iTech1Drone << "x Warden I \n";
-                myOutputfile << iTech2Drone << "x Warden II \n";
+                myOutputfile <<  iTech1Drone   << "x Warden I \n";
+                myOutputfile <<  iTech2Drone   << "x Warden II \n";
             }
-            if (szDroneName == "Warrior II" || "Warrior I" || "'Augmented' Warrior" || "'Integrated' Warrior")
+            else if (szDroneName == "Warrior II" || szDroneName == "Warrior I" || szDroneName == "'Augmented' Warrior" || szDroneName == "'Integrated' Warrior")
             {
-                myOutputfile << iTech1Drone << "x Warrior I \n";
-                myOutputfile << iTech2Drone << "x Warrior II \n";
+                myOutputfile <<  iTech1Drone   << "x Warrior I \n";
+                myOutputfile <<  iTech2Drone   << "x Warrior II \n";
             }
-            if (szDroneName == "Wasp II" || "Wasp I" || "'Augmented' Wasp" || "'Integrated' Wasp")
+            else if (szDroneName == "Wasp II" || szDroneName == "Wasp I" || szDroneName == "'Augmented' Wasp" || szDroneName == "'Integrated' Wasp")
             {
-                myOutputfile << iTech1Drone << "x Wasp I \n";
-                myOutputfile << iTech2Drone << "x Wasp II \n";
+                myOutputfile <<  iTech1Drone   << "x Wasp I \n";
+                myOutputfile <<  iTech2Drone   << "x Wasp II \n";
             }
-            myOutputfile << iGuidanceSystems << "x Guidance Systems \n";
-            myOutputfile << iRobotics << "x Robotics \n";
-            myOutputfile << iMorphite << "x Morphite \n";
-            myOutputfile << iSuperconductorRails << "x Superconductor Rails \n";
-            myOutputfile << iParticleAcceleratorUnit << "x Particle Accelerator Unit \n";
-            myOutputfile << iThermonuclearTriggerUnit << "x Thermonuclear Trigger Unit \n";
-            myOutputfile << iLaserFocusingCrystals << "x Laser Focusing Crystals \n";
-            myOutputfile << iPhotonMicroprocessor << "x Photon Microprocessor \n";
-            myOutputfile << iEliteDroneAI << "x Elite Drone AI \n";
-            myOutputfile << iDroneSynapticRelayWiring << "x Drone Synaptic Relay Wiring \n";
-            myOutputfile << iDroneCapillaryFluid << "x Drone Capillary Fluid \n";
-            myOutputfile << iDroneCerebralFragment << "x Drone Cerebral Fragment \n";
-            myOutputfile << iDroneTacticalLimb << "x Drone Tactical Limb \n";
-            myOutputfile << iDroneCoronaryUnit << "x Drone Coronary Unit \n";
-            myOutputfile << iDroneEpidermalShieldingChunk << "x Drone Epidermal Shielding Chunk \n";
-            myOutputfile << iKorakosModifiedDroneControlUnit << "x Korako's Modified Drone Control Unit \n";
-            myOutputfile << iIonThruster << "x Ion Thruster \n";
-            myOutputfile << iMagnetometricSensorCluster << "x Magnetometric Sensor Cluster \n";
-            myOutputfile << iCrystallineCarbonideArmorPlate << "x Crystalline Carbonide Armor Plate \n";
-            myOutputfile << iFusionReactorUnit << "x Fusion Reactor Unit \n";
-            myOutputfile << iOscillatorCapacitorUnit << "x Oscillator Capacitor Unit \n";
-            myOutputfile << iPulseShieldEmitter << "x Pulse Shield Emitter \n";
-            myOutputfile << iIceHarvesterII << "x Ice Harvester II \n";
-            myOutputfile << iIceHarvesterUpgradeII << "x Ice Harvester Upgrade II \n";
-            myOutputfile << iModulatedStripMinerII << "x Modulated Strip Miner II \n";
-            myOutputfile << iMiningLaserUpgradeII << "x Mining Laser Upgrade II \n";
+            else (cout << "Invalid Drone Name" << "\n");
+            myOutputfile << iGuidanceSystems  << "x Guidance Systems \n";
+            myOutputfile << iRobotics  << "x Robotics \n";
+            myOutputfile << iMorphite  << "x Morphite \n";
+            myOutputfile << iSuperconductorRails  << "x Superconductor Rails \n";
+            myOutputfile << iParticleAcceleratorUnit  << "x Particle Accelerator Unit \n";
+            myOutputfile << iThermonuclearTriggerUnit  << "x Thermonuclear Trigger Unit \n";
+            myOutputfile << iLaserFocusingCrystals  << "x Laser Focusing Crystals \n";
+            myOutputfile << iPhotonMicroprocessor  << "x Photon Microprocessor \n";
+            myOutputfile << iEliteDroneAI  << "x Elite Drone AI \n";
+            myOutputfile << iDroneSynapticRelayWiring  << "x Drone Synaptic Relay Wiring \n";
+            myOutputfile << iDroneCapillaryFluid  << "x Drone Capillary Fluid \n";
+            myOutputfile << iDroneCerebralFragment  << "x Drone Cerebral Fragment \n";
+            myOutputfile << iDroneTacticalLimb  << "x Drone Tactical Limb \n";
+            myOutputfile << iDroneCoronaryUnit  << "x Drone Coronary Unit \n";
+            myOutputfile << iDroneEpidermalShieldingChunk  << "x Drone Epidermal Shielding Chunk \n";
+            myOutputfile << iKorakosModifiedDroneControlUnit  << "x Korako's Modified Drone Control Unit \n";
+            myOutputfile << iIonThruster  << "x Ion Thruster \n";
+            myOutputfile << iMagnetometricSensorCluster  << "x Magnetometric Sensor Cluster \n";
+            myOutputfile << iCrystallineCarbonideArmorPlate  << "x Crystalline Carbonide Armor Plate \n";
+            myOutputfile << iFusionReactorUnit  << "x Fusion Reactor Unit \n";
+            myOutputfile << iOscillatorCapacitorUnit  << "x Oscillator Capacitor Unit \n";
+            myOutputfile << iPulseShieldEmitter  << "x Pulse Shield Emitter \n";
+            myOutputfile << iIceHarvesterII  << "x Ice Harvester II \n";
+            myOutputfile << iIceHarvesterUpgradeII  << "x Ice Harvester Upgrade II \n";
+            myOutputfile << iModulatedStripMinerII  << "x Modulated Strip Miner II \n";
+            myOutputfile << iMiningLaserUpgradeII  << "x Mining Laser Upgrade II \n";
             myOutputfile << "Total Cost: " << "\n"; // Blank since I can't handle the ESI api yet
             myOutputfile.close();
         }
