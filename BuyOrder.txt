@@ -1,0 +1,152 @@
+Buy Order for 100x Acolyte II
+0x Tritanium 
+0x Pyerite 
+0x Mexallon 
+0x Isogen 
+0x Nocxium 
+0x Megacyte 
+0x Zydrine 
+1x R.A.M.- Robotics 
+1x Acolyte I 
+0x Acolyte II 
+1x Guidance Systems 
+1x Robotics 
+1x Morphite 
+0x Superconductor Rails 
+0x Particle Accelerator Unit 
+0x Thermonuclear Trigger Unit 
+1x Laser Focusing Crystals 
+0x Photon Microprocessor 
+0x Elite Drone AI 
+0x Drone Synaptic Relay Wiring 
+0x Drone Capillary Fluid 
+0x Drone Cerebral Fragment 
+0x Drone Tactical Limb 
+0x Drone Coronary Unit 
+0x Drone Epidermal Shielding Chunk 
+0x Korako's Modified Drone Control Unit 
+0x Ion Thruster 
+0x Magnetometric Sensor Cluster 
+0x Crystalline Carbonide Armor Plate 
+0x Fusion Reactor Unit 
+0x Oscillator Capacitor Unit 
+0x Pulse Shield Emitter 
+0x Ice Harvester II 
+0x Ice Harvester Upgrade II 
+0x Modulated Strip Miner II 
+0x Mining Laser Upgrade II 
+Total Cost: 
+Buy Order for 100x Acolyte I
+0x Tritanium 
+0x Pyerite 
+0x Mexallon 
+0x Isogen 
+0x Nocxium 
+0x Megacyte 
+0x Zydrine 
+0x R.A.M.- Robotics 
+0x Acolyte I 
+0x Acolyte II 
+0x Guidance Systems 
+0x Robotics 
+0x Morphite 
+0x Superconductor Rails 
+0x Particle Accelerator Unit 
+0x Thermonuclear Trigger Unit 
+0x Laser Focusing Crystals 
+0x Photon Microprocessor 
+0x Elite Drone AI 
+0x Drone Synaptic Relay Wiring 
+0x Drone Capillary Fluid 
+0x Drone Cerebral Fragment 
+0x Drone Tactical Limb 
+0x Drone Coronary Unit 
+0x Drone Epidermal Shielding Chunk 
+0x Korako's Modified Drone Control Unit 
+0x Ion Thruster 
+0x Magnetometric Sensor Cluster 
+0x Crystalline Carbonide Armor Plate 
+0x Fusion Reactor Unit 
+0x Oscillator Capacitor Unit 
+0x Pulse Shield Emitter 
+0x Ice Harvester II 
+0x Ice Harvester Upgrade II 
+0x Modulated Strip Miner II 
+0x Mining Laser Upgrade II 
+Total Cost: 
+Buy Order for 100x 'Integrated' Acolyte
+0x Tritanium 
+0x Pyerite 
+0x Mexallon 
+0x Isogen 
+0x Nocxium 
+0x Megacyte 
+0x Zydrine 
+0x R.A.M.- Robotics 
+1x Acolyte I 
+0x Acolyte II 
+0x Guidance Systems 
+0x Robotics 
+0x Morphite 
+0x Superconductor Rails 
+0x Particle Accelerator Unit 
+0x Thermonuclear Trigger Unit 
+0x Laser Focusing Crystals 
+0x Photon Microprocessor 
+0x Elite Drone AI 
+1x Drone Synaptic Relay Wiring 
+1x Drone Capillary Fluid 
+1x Drone Cerebral Fragment 
+0x Drone Tactical Limb 
+0x Drone Coronary Unit 
+0x Drone Epidermal Shielding Chunk 
+0x Korako's Modified Drone Control Unit 
+0x Ion Thruster 
+0x Magnetometric Sensor Cluster 
+0x Crystalline Carbonide Armor Plate 
+0x Fusion Reactor Unit 
+0x Oscillator Capacitor Unit 
+0x Pulse Shield Emitter 
+0x Ice Harvester II 
+0x Ice Harvester Upgrade II 
+0x Modulated Strip Miner II 
+0x Mining Laser Upgrade II 
+Total Cost: 
+Buy Order for 100x 'Augmented' Acolyte
+0x Tritanium 
+0x Pyerite 
+0x Mexallon 
+0x Isogen 
+0x Nocxium 
+0x Megacyte 
+0x Zydrine 
+0x R.A.M.- Robotics 
+0x Acolyte I 
+1x Acolyte II 
+0x Guidance Systems 
+0x Robotics 
+0x Morphite 
+0x Superconductor Rails 
+0x Particle Accelerator Unit 
+0x Thermonuclear Trigger Unit 
+0x Laser Focusing Crystals 
+0x Photon Microprocessor 
+1x Elite Drone AI 
+8x Drone Synaptic Relay Wiring 
+8x Drone Capillary Fluid 
+6x Drone Cerebral Fragment 
+0x Drone Tactical Limb 
+1x Drone Coronary Unit 
+0x Drone Epidermal Shielding Chunk 
+0x Korako's Modified Drone Control Unit 
+0x Ion Thruster 
+0x Magnetometric Sensor Cluster 
+0x Crystalline Carbonide Armor Plate 
+0x Fusion Reactor Unit 
+0x Oscillator Capacitor Unit 
+0x Pulse Shield Emitter 
+0x Ice Harvester II 
+0x Ice Harvester Upgrade II 
+0x Modulated Strip Miner II 
+0x Mining Laser Upgrade II 
+Total Cost: 
